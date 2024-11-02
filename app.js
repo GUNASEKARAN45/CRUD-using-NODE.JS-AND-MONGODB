@@ -79,10 +79,10 @@ app.get('/',(req,res)=>{
         res.sendFile(path.join(__dirname,'views','home.html'));
 })
 
-mongoose.connect('mongodb+srv://gunasekaran:gunasekaran23@crudoperation.rbavy.mongodb.net/?retryWrites=true&w=majority&appName=CRUDoperation/userDetails').then(()=>{
+mongoose.connect('mongodb+srv://gunasekaran:gunasekaran23@crudoperation.rbavy.mongodb.net/?retryWrites=true&w=majority&appName=CRUDoperation/users').then(()=>{
     console.log('database is connected');
-}).catch(()=>{
-    console.log('database is not connected')
+}).catch((err)=>{
+    console.log('database is not connected',err)
 })
 
 
@@ -96,9 +96,9 @@ mongoose.connect('mongodb+srv://gunasekaran:gunasekaran23@crudoperation.rbavy.mo
 
 
 
+const port=process.env.PORT || 8000;
 
 
-
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log('running on port 8000')
 })

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP PAGE</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <form action="/form_filled" id="form" autocomplete="off" method="POST">
+        <fieldset style="width: fit-content; background-color:rgba(0, 0, 0, 0.787);border: 2px solid red;">
+            <legend>TELL US ABOUT YOURSELF</legend>
+
+
+
+            <div class="label1">
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+        </div>
+
+<div class="label2">
+            <label for="pass">PASSWORD:</label>
+            <input type="password" id="pass" name="password" required min="5" max="10">
+            <br>
+        </div>
+
+<div class="label3">
+            <label for="name">FULL NAME:</label>
+            <input type="text" id="name" name="name" required >
+            <br>
+        </div>
+
+<div class="label4">
+            <label for="contact">CONTACT NO:</label>
+            <input type="tel" id="contact" name="contactno" required min="10" max="10">
+            <br>
+        </div>
+
+<div class="label5">
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob" max="2006-12-31" min="1960-01-01" name="dob" required>
+            <br>
+        </div>
+
+<div class="label6">
+           <label for="age">AGE:</label>
+            <input type="number" name="age" id="age" min="18" max="80" name="age" required>
+            <br>
+        </div>
+
+<div class="label7">
+            <label for="gender">GENDER:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">MALE</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">FEMALE</label>
+            <input type="radio" name="gender" id="others" value="others">
+            <label for="others">OTHERS</label>
+            <br>
+        </div>
+
+<div class="label8">
+            <label for="language">PREFERRED LANGUAGE:</label>
+            <select name="language" id="language" required>
+                <option value="english" >ENGLISH</option>
+                <option value="hindi">HINDI</option>
+                <option value="tamil">TAMIL</option>
+            </select>
+            <br>
+        </div>
+
+        <div class="label9">
+
+            <label for="place">FAVOURITE PLACE TO VISIT:</label>
+            <select name="place" id="place" required>
+                <option value="beach">BEACH</option>
+                <option value="hills">HILLS</option>
+                <option value="overseas">OVERSEAS</option>
+            </select>
+            <br>
+        </div>
+
+<div class="label11">
+            <button style="width: 100px; margin-left: 170px;margin-top: 20px;padding: 10px;border-radius: 20px;cursor: pointer;box-shadow: 2px gray;">submit</button> 
+            
+        </div>
+
+
+
+
+
+
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
